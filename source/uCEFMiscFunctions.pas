@@ -10,7 +10,7 @@
 // For more information about CEF4Delphi visit :
 //         https://www.briskbard.com/index.php?lang=en&pageid=cef
 //
-//        Copyright © 2020 Salvador Diaz Fau. All rights reserved.
+//        Copyright ï¿½ 2020 Salvador Diaz Fau. All rights reserved.
 //
 // ************************************************************************
 // ************ vvvv Original license and comments below vvvv *************
@@ -807,8 +807,8 @@ var
 begin
   if (length(aFile) > 0) and (length(aMessage) > 0) then
     begin
-      TempFile    := AnsiString(aFile);
-      TempMessage := AnsiString(aMessage);
+      TempFile    := Utf8Encode(aFile);
+      TempMessage := Utf8Encode(aMessage);
 
       cef_log(@TempFile[1], aLine, aSeverity, @TempMessage[1]);
     end;

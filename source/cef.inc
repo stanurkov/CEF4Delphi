@@ -10,7 +10,7 @@
 // For more information about CEF4Delphi visit :
 //         https://www.briskbard.com/index.php?lang=en&pageid=cef
 //
-//        Copyright © 2017 Salvador Diaz Fau. All rights reserved.
+//        Copyright ï¿½ 2017 Salvador Diaz Fau. All rights reserved.
 //
 // ************************************************************************
 // ************ vvvv Original license and comments below vvvv *************
@@ -407,3 +407,7 @@
   {$DEFINE SUPPORTS_INLINE}
 {$ENDIF}
 
+
+{$T-}
+{$WARN UNSAFE_CAST OFF}
+{$WARN UNSAFE_TYPE OFF}
